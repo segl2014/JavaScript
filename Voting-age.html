@@ -1,0 +1,35 @@
+<!------- Write a program to Enter age and check candidate is Eligible for Voting or Not. ------------>
+<!DOCTYPE html>
+<html>
+<!-------------------------------------- Head Section --------------------------------------------->
+
+<head>
+    <script type="text/javascript">
+        function age() {
+            var age;
+            age = Number(document.getElementById("input1").value);
+
+            if (age >= 18) {
+                document.write("You are Eligible for voting");
+            }
+            else {
+                document.write("You are not Eligible for voting");
+            }
+        }
+
+    </script>
+</head>
+<!--------------------------------------End Head Section --------------------------------------------->
+
+<body>
+    <!-------------------------------------- Body Section --------------------------------------------->
+    <h3> Check candidate is Eligible for Voting or Not </h3>
+    <label> Enter your age </label>
+    <input type="number" name="age" id="input1">
+
+    <input type="submit" value="Ok" onclick="age()">
+</body>
+<!---------------------------------- End Body Section --------------------------------------------->
+
+</html>
+<!-------------------------------------- End Section --------------------------------------------->

@@ -1,0 +1,36 @@
+<!------- Write a program to Enter two integer number and find which number id greater. ------------>
+<!DOCTYPE html>
+<html>
+<!-------------------------------------- Head Section --------------------------------------------->
+
+<head>
+    <script type="text/javascript">
+        function number() {
+            var num1, num2;
+            num1 = Number(document.getElementById("input1").value);
+            num2 = Number(document.getElementById("input2").value);
+
+            if (num1 >= num2) {
+                document.write("Number a is Greater");
+            } else {
+                document.write("Number b is Greater");
+            }
+        }
+    </script>
+</head>
+<!--------------------------------------End Head Section --------------------------------------------->
+
+<body>
+    <!-------------------------------------- Body Section --------------------------------------------->
+    <h3> Find Greater Number </h3>
+    <label> Enter First Number: </label>
+    <input type="number" name="number1" id="input1">
+    <label> Enter Second Number: </label>
+    <input type="number" name="number2" id="input2">
+
+    <input type="submit" value="Ok" onclick="number()">
+</body>
+<!---------------------------------- End Body Section --------------------------------------------->
+
+</html>
+<!-------------------------------------- End Section --------------------------------------------->

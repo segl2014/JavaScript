@@ -1,0 +1,51 @@
+<!------- Write a program to Greater number among three integer number. ------------>
+<!DOCTYPE html>
+<html>
+<!-------------------------------------- Head Section --------------------------------------------->
+
+<head>
+    <script type="text/javascript">
+        function num() {
+            var num1, num2, num3;
+            num1 = Number(document.getElementById("input1").value);
+            num2 = Number(document.getElementById("input2").value);
+            num3 = Number(document.getElementById("input3").value);
+
+            if (num1 >= num2) {
+                if (num1 >= num3) {
+                    window.alert(num1 + "- First number is greater");
+                }
+                else {
+                    window.alert(num3 + "- Thrid number is greater");
+                }
+            }
+            else {
+                if (num2 >= num3) {
+                    window.alert(num2 + "- Second number is greater");
+                }
+                else {
+                    window.alert(num3 + "- Thrid number is greater");
+                }
+            }
+        }
+
+    </script>
+</head>
+<!--------------------------------------End Head Section --------------------------------------------->
+
+<body>
+    <!-------------------------------------- Body Section --------------------------------------------->
+    <h3> Check Candidate is Greater number among Three Integer Number </h3>
+    <label> Enter First Number </label>
+    <input type="number" name="num1" id="input1">
+    <label> Enter Second Number </label>
+    <input type="number" name="num2" id="input2">
+    <label> Enter Thrid Number</label>
+    <input type="number" name="num3" id="input3">
+
+    <input type="submit" value="Ok" onclick="num()">
+</body>
+<!---------------------------------- End Body Section --------------------------------------------->
+
+</html>
+<!-------------------------------------- End Section --------------------------------------------->
